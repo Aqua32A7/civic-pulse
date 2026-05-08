@@ -37,7 +37,6 @@ function GhostMap() {
   const [map, setMap] = useState<google.maps.Map | null>(null);
   const [mapError, setMapError] = useState<string | null>(null);
   const mapRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     supabase
       .from("projects")
